@@ -1,0 +1,69 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("view.jpg");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container {
+    max-width: 80%;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #696969;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.post {
+    max-width: 80%;
+    border: 1px solid ;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fafafa;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content {
+    margin-top: 10px;
+    color: #111;
+    max-height: 0;
+    overflow: hidden;
+    font-size: larger;
+    transition: max-height 0.3s ease-out;
+}
+
+.post:hover .content {
+    max-height: 200px; /* Set your desired max height */
+    overflow: auto;
+}
